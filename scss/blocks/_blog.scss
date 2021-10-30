@@ -1,0 +1,87 @@
+.blog{
+  &__block{
+    display: flex;
+    justify-content: space-between;
+    @include _850{
+      flex-direction: column;
+      }
+  }
+  &__double{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include _850{
+      width: 100%;
+      }
+  }
+  
+  &__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__now{
+    justify-content: left;
+    text-align: left;
+    margin: 10px 0;
+    width: 90%;
+    @include _350{
+      margin: 0;
+    }
+  }
+  &__items{
+    height: 26%;
+    display: flex;
+    justify-content: space-between;
+    @include _850{
+        margin: 20px 0 ;
+  }
+  }
+  &__half{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+  }
+  &__park{
+    margin-top: 20px;
+  @include fontStyle($littleFont, Gelasio, 160%, #000000, $littleSpace);
+  }
+  &__email-main{
+    margin-top: 20px;
+    @include _350{
+      margin: 0;
+    }
+  }
+  &__place{
+  @include fontStyle($littleFont, Gelasio, 150%, #000000, $littleSpace);
+  @include _480{
+    margin: 0;
+    @include fontStyle(13px, Gelasio, 150%, #000000, $littleSpace);
+  }
+  }
+  &__email{
+    display: inline;
+    @include fontStyle($littleFont, Roboto_regular, 150%, #000000, $littleSpace);
+  opacity: 0.8;
+  @include _480{
+    @include fontStyle(12px, Roboto_regular, 150%, #000000, $littleSpace);
+     
+  } 
+  }
+  &__img{
+    @include _850{
+       width: 45%; 
+    }       
+      padding-left: 2%;
+      padding-right: 2%;
+      @include _350{
+        width: 48%; 
+     } 
+  }
+  &__bigimg{
+      padding-right: 2%;
+  }
+}

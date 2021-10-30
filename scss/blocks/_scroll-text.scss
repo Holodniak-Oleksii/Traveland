@@ -1,0 +1,28 @@
+.scroll__lab{
+  margin: 10px 0;
+@include fontStyle(22px, Gelasio,150%, #000000, $littleSpace);
+}
+.scroll__name{
+  margin-bottom: 10px;
+@include fontStyle(19px, Roboto,150%, #000000, $littleSpace);
+opacity: 0.8;
+}
+.scroll__name{
+  &::before{
+    content: url("../img/vector/location.svg");
+  }
+}
+.star{
+  &::before{
+    content: url("../img/vector/star.svg");
+    margin-left: 40px;
+  }
+}
+.scroll__time{
+  margin-bottom: 10px;
+  @include fontStyle(15px, Roboto,150%, #000000, $littleSpace);
+    opacity: 0.8;
+}
+.scroll__price{
+  @include fontStyle(15px, Roboto, 150%, #000000, $littleSpace);
+}

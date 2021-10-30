@@ -1,0 +1,14 @@
+@mixin fontStyle($size: 22px, $style: Ribeye, $height: 150%, $color: #ffffff, $spacing: .06em) {
+  font-family: $style;
+  font-size: $size;
+  font-style: normal;
+  font-weight: normal;
+  line-height: $height;
+  color: $color;
+  letter-spacing: $spacing;
+
+  @content;
+}
+@mixin white-gradient {
+  background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}  

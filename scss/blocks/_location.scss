@@ -1,0 +1,43 @@
+.location{
+  &__under{
+    margin: 0 auto;
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 70px;
+    @include _768{
+      flex-direction: column;
+      }
+  }
+  &__city {
+    box-sizing: border-box;
+    width: 32%;
+    height: 100%;
+    border: .9px solid rgba(0, 0, 0, .1);
+    border-radius: 9px;
+    box-shadow: 0 5px 33px rgba(0, 0, 0, .08);
+    padding-bottom: 6%;
+    @include _768{
+      width: 80%;
+      margin: 30px auto;
+    }
+  }
+  &__info {
+    margin-top: 30px;
+    text-align: center;
+  
+    @include fontStyle(22px, Gelasio, 150%, #000000, $littleSpace);
+  }
+  
+  &__underinfo {
+    text-align: center;
+    opacity: .6;
+  
+    @include fontStyle(17px, Roboto, 160%, #000000, $littleSpace);
+  }
+}
+.img__adaptive{
+  width: 100%;
+}

@@ -1,0 +1,45 @@
+.content{
+  width: 72%;
+  margin: 0 auto;
+  @include _1170{
+    width: 85%;
+    }
+    @include _1024{
+        width: 90%;
+    }
+    @include _979{
+        width: 95%;
+    }
+}
+.title{
+  margin-top: 50px;
+  padding: 30px;
+  text-align: center;
+  @include fontStyle(41px, Gelasio,150%, #000000, $littleSpace);
+  @include _480{
+    @include fontStyle(30px, Gelasio,120%, #000000, $littleSpace);
+  }
+}
+.under{
+  text-align: center;
+  opacity: .6;
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  @include fontStyle($littleFont, Roboto, 160%, #000000, $littleSpace);
+  @include _600{
+    width: 100%;
+    @include fontStyle(15px, Roboto, 160%, #000000, $littleSpace);
+    }
+  @include _480{
+      @include fontStyle(14px, Roboto,160%, #000000, $littleSpace);
+      
+  }
+}
+.button{
+  width: 150px;
+  height: 55px;
+  background: #c9453b;
+  border-radius: 4.77204px;
+  @include fontStyle(15px, Roboto);
+}

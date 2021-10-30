@@ -1,0 +1,111 @@
+.footer{
+  background: rgba(38, 148, 153, 0.04);
+  margin-top: 150px;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    @include _768{
+      justify-content: space-around;
+      }
+      @include _480{
+        flex-direction: column;
+      }
+  }
+  
+  &__block:nth-child(2){
+    @include _768{
+      display: none;
+      }
+  }
+  
+  &__block:nth-child(3){
+    @include _768{
+      display: none;
+      }
+  }
+  &__title{
+    @include fontStyle();
+    color: #000;
+    margin-bottom: 40px;
+  }
+  
+  &__contacts{
+    display: flex;
+    justify-content: space-between;
+    @include _480{
+      width: 80%;
+      margin: auto;
+    }
+  }
+  &__block{
+    margin: 80px 0;
+    @include _480{
+      text-align: center;
+      }
+  }
+  &__us{
+  margin-bottom: 15px;
+  @include fontStyle(15px, Roboto, 160%, #000000, .06em);
+  }
+  &__email{
+    margin-bottom: 20px;
+  @include fontStyle(15px, Roboto, 160%, #000000, .06em);
+  }
+  &__form{
+    display: flex;
+    @include _768{
+      flex-direction: column;
+  }
+  }
+  &__label{
+    display: block;
+    @include fontStyle($littleFont, Roboto, 150%, #000000, .06em);
+    margin-bottom: 20px;
+  }
+  &__input{
+    width: 186px;
+    height: 42px;
+    outline: none;
+    border: 1px inset rgba(0, 0, 0, 0.2);
+    background-color:rgba(233, 233, 233, 0.2);
+    box-sizing: border-box;
+    box-shadow: 0px 0px 9.5px 9.5px rgba(182, 175, 175, 0.15);
+    border-radius: 4.77204px;
+    @include fontStyle(15px, Roboto, 150%, #000000, .06em);
+    @include _480{
+      width: 80%;
+      margin: 0 auto;
+      }
+  }
+  &__input::placeholder{
+    opacity:  1;
+  }
+  &__button{
+    margin-left: 20px;
+    width: 98px;
+    height: 42px;
+    background: #C9453B;
+    border-radius: 4.77204px;
+    @include _768{
+      width: 186px;
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+    @include _480{
+      width: 80%;
+      margin: 10px auto;
+      }
+  }
+  &__link{
+      width: 50px;
+  }
+  &__img{
+      width: 100%;
+  }
+}
+.list{
+  &__items{
+    margin: 15px 0;
+    @include fontStyle(15px, Roboto, 150%, #000000, .06em);
+  }
+}

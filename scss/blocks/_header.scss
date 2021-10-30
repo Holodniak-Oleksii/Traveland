@@ -1,0 +1,99 @@
+.header{
+  width: 100%;
+  background: url("../img/Rectangle31.png") no-repeat;
+  background-size: cover;
+  padding-bottom: 8%;
+  &__link{
+    color: #ffffff;
+    text-decoration: none;
+    @include fontStyle($littleFont, Roboto);
+  }
+  &__head{ 
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+  &__title{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 25%;
+    @include fontStyle();
+  }
+  &__menu{
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    @include _850{
+      width: 65%;
+  }
+  @include _768{
+      display: none;
+    }
+  }
+  &__items{
+    margin: 45px 0px;
+    @include _850{
+      margin: 65px 0px;
+    }
+  }
+  &__button{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 25%;
+    @include _768{
+      width: 30%;
+    }
+      @include _350{
+        width: 40%;
+    }
+  }  
+  &__text{
+    padding-top: 150px;
+    width: 100%;
+    @include _768{
+      display: flex;
+      flex-direction: column;
+      align-items:center;
+      justify-content: center;
+    }
+  }
+  &__label{
+    width: 100%;
+    text-align: left;
+    padding-bottom: 30px;
+    @include fontStyle(calc(15px + 47 *(100vw / 1526)), Gelasio,120%, #ffffff, $littleSpace);
+    @include _768{
+      width: 90%;
+      @include fontStyle(40px, Gelasio,120%, #ffffff, $littleSpace);
+      text-align: center;
+      }
+      @include _480{
+        @include fontStyle(30px, Gelasio,120%, #ffffff, $littleSpace);
+      }
+  }
+  &__under{
+    width: 60%;
+    padding-bottom: 40px;
+    text-align: left;
+    opacity: .6;
+    @include fontStyle($littleFont, Roboto, 160%, #ffffff, $littleSpace);
+    @include _768{
+      width: 90%;
+      text-align: center;
+      @include fontStyle(20px, Roboto, 160%, #ffffff, $littleSpace);
+      }
+      @include _480{
+        @include fontStyle(15px, Roboto,160%, #ffffff, $littleSpace);
+      }
+  }  
+  &__button2{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+  }
+}

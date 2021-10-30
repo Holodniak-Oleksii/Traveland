@@ -1,0 +1,60 @@
+
+.scroll {
+  width: 100%;
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-400px * 7))}
+  }
+
+  &__images{
+    width: 100%;
+    border-radius: 10px
+  }
+  &__under {
+    height: 10%;
+    margin: 2% auto;
+  }
+  &__move {
+      margin-top: 30px;
+    background: white;
+    overflow:hidden;
+    position: relative;
+    width: 100%;
+    
+    &::before,
+    &::after {
+      @include white-gradient;
+      content: "";
+      height: 330px;
+      position: absolute;
+      width: 10%;
+      z-index: 2;
+    }
+    
+    &::after {
+      right: 0;
+      top: 0;
+      transform: rotateZ(180deg);
+    }
+  
+    &::before {
+      left: 0;
+      top: 0;
+    }
+    
+    .scroll__line {
+      animation: scroll $animationSpeed linear infinite;
+      display: flex;
+          justify-content:space-between;
+      width: calc(360px * 14);
+          height: 330px;
+    }
+    
+    &__item {
+          border-radius:10px;
+          width: 251px;
+          height: 100%;
+    }
+  }  
+}
+
